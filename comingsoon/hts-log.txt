@@ -1,0 +1,36 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 12 May 2018 20:22:41 at http://egotype.design/work/web/html/kounter/index-waterpipe.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://egotype.design/work/web/html/kounter/index-waterpipe.html -O1 "C:\My Web Sites\coming soon2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:29:24	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/images/about-image-7-lg.jpg (from egotype.design/work/web/html/kounter/index-waterpipe.html)
+20:29:26	Warning: 	file not stored in cache due to bogus state (broken size, expected 1902947 got 1030699): egotype.design/work/web/html/kounter/images/page-image-bw.jpg
+20:29:26	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/js/plugins/bootstrap.min.js (from egotype.design/work/web/html/kounter/index-waterpipe.html)
+20:29:28	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.eot (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:29	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.eot? (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:30	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.woff2 (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:31	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.woff (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:31	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.ttf (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:31	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/glyphicons-halflings-regular.svg (from egotype.design/work/web/html/kounter/css/plugins/bootstrap.min.css)
+20:29:32	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0 (from egotype.design/work/web/html/kounter/css/icons/font-awesome.css)
+20:29:33	Warning: 	File not parsed, looks like binary: egotype.design/work/web/html/kounter/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0
+20:29:33	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/css/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0 (from egotype.design/work/web/html/kounter/css/icons/font-awesome.css)
+20:29:35	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/fonts/linea/linea.eot? (from egotype.design/work/web/html/kounter/css/icons/linea.css)
+20:29:59	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/fonts/linea/linea.ttf (from egotype.design/work/web/html/kounter/css/icons/linea.css)
+20:30:06	Warning: 	Retry after error -2 (Receive Time Out) at link egotype.design/work/web/html/kounter/fonts/linea/linea.svg (from egotype.design/work/web/html/kounter/css/icons/linea.css)
+20:30:14	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/fonts/montserrat/Montserrat-ExtraLight.woff2 (from egotype.design/work/web/html/kounter/css/style.css)
+20:30:18	Warning: 	File not parsed, looks like binary: egotype.design/work/web/html/kounter/fonts/montserrat/Montserrat-Medium.woff2
+20:30:18	Warning: 	File not parsed, looks like binary: egotype.design/work/web/html/kounter/fonts/montserrat/Montserrat-Bold.woff2
+20:30:18	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/fonts/montserrat/Montserrat-Bold.ttf (from egotype.design/work/web/html/kounter/css/style.css)
+20:30:27	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/images/page-image-2.jpg (from egotype.design/work/web/html/kounter/css/style.css)
+20:30:39	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/images/page-image-4.jpg (from egotype.design/work/web/html/kounter/css/style.css)
+20:30:54	Warning: 	Retry after error -4 (Incorrect length (1030699 Bytes, 1902947 expected)) at link egotype.design/work/web/html/kounter/images/page-image-bw.jpg (from egotype.design/work/web/html/kounter/css/style.css)
+20:31:10	Warning: 	Retry after error -4 (No data (connection closed)) at link egotype.design/work/web/html/kounter/css/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0 (from egotype.design/work/web/html/kounter/css/icons/font-awesome.css)
+20:31:11	Warning: 	File not parsed, looks like binary: egotype.design/work/web/html/kounter/fonts/montserrat/Montserrat-ExtraLight.woff2
+20:32:29	Error: 	"Not Found" (404) at link egotype.design/work/web/html/kounter/css/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0 (from egotype.design/work/web/html/kounter/css/icons/font-awesome.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 48 seconds : 85 links scanned, 64 files written (9342512 bytes overall) [9152401 bytes received at 15565 bytes/sec], 636731 bytes transferred using HTTP compression in 21 files, ratio 22%, 2.1 requests per connection
+(7 errors, 18 warnings, 0 messages)

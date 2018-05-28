@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 12 May 2018 00:01:51 at https://www.preview.altcoin.io/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.preview.altcoin.io/ -O1 "C:\My Web Sites\altocin.io" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+00:05:09	Error: 	"Not Found" (404) at link https://www.preview.altcoin.io/assets/images/avatar-1.jpg (from https://www.preview.altcoin.io/)
+00:06:45	Error: 	"Not Found" (404) at link https://www.preview.altcoin.io/assets/images/multiple-arrow.png (from https://www.preview.altcoin.io/assets/css/pages.css)
+00:06:45	Error: 	"Not Found" (404) at link https://www.preview.altcoin.io/assets/images/big/bg1.jpg (from https://www.preview.altcoin.io/assets/css/pages.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 54 seconds : 65 links scanned, 61 files written (3680209 bytes overall) [1744815 bytes received at 5934 bytes/sec], 3047083 bytes transferred using HTTP compression in 44 files, ratio 35%, 2.0 requests per connection
+(3 errors, 0 warnings, 0 messages)

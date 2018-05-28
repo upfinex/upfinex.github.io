@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upfinex.com - Decentralized Exchange Beta Version. Trade Simple, Fast and Easily">
+    <meta name="author" content="Upfinex">
+	<meta name="keywords" content="ICO,Exchange,Crypto,ethereum, upfinex, upx, cryptocurrency, token, blockchain, trade, convert, chart, index, bitcoin, buy, purchase, decentralized, beta, how buy tokens, invest, money, income, investor, coin, china ico, big ico, not scam, trader, volume, etherdelta, wallet, api, smartcontract, chain, ether, ico live, ico hot, 10 top ico's, ico list, pre ico, mining, cash, safe, bit, decentralized exchange, dex ">
+
+	
+    <!-- App Favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.jpg">
+    <title>Upfinex Exchange - Trade Simple, Fast and Easily </title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/modernizr.min.js"></script>
+    <link rel="stylesheet" href="assets/dist/gridstack.css"/>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="assets/dist/gridstack.js"></script>
+    <script src="assets/dist/gridstack.jQueryUI.js"></script>
+    <script type="text/javascript" src="charting_library/charting_library.min.js"></script>
+    <script type="text/javascript" src="charting_library/datafeed/udf/datafeed.js"></script>
+
+    <script type="text/javascript">
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        TradingView.onready(function()
+        {
+            var widget = window.tvWidget = new TradingView.widget({
+                fullscreen: true,
+                symbol: 'BITFINEX:BTCUSD',
+                interval: 'D',
+                toolbar_bg: "#f1f3f6",
+                theme: "Dark",
+                style: "1",
+                locale: "en",
+                toolbar_bg: "#f1f3f6",
+                enable_publishing: false,
+                allow_symbol_change: true,
+                hideideas: true,
+                container_id: "tv_chart_container_mob",
+                //	BEWARE: no trailing slash is expected in feed URL
+                datafeed: new Datafeeds.UDFCompatibleDatafeed("https://demo_feed.tradingview.com/"),
+                library_path: "charting_library/",
+                locale: getParameterByName('lang') || "en",
+                //	Regression Trend-related functionality is not implemented yet, so it's hidden for a while
+                drawings_access: { type: 'black', tools: [ { name: "Regression Trend" } ] },
+                disabled_features: ["use_localstorage_for_settings"],
+                enabled_features: ["study_templates"],
+                charts_storage_url: 'http://saveload.tradingview.com',
+                charts_storage_api_version: "1.1",
+                client_id: 'tradingview.com',
+                user_id: 'public_user_id'
+            });
+        });
+
+    </script>
+    <script type="text/javascript" src="../s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        TradingView.onready(function()
+        {
+            var widget = window.tvWidget = new TradingView.widget({
+                fullscreen: true,
+                symbol: 'BITFINEX:BTCUSD',
+                interval: 'D',
+                toolbar_bg: "#f1f3f6",
+                theme: "Dark",
+                style: "1",
+                locale: "en",
+                toolbar_bg: "#f1f3f6",
+                enable_publishing: false,
+                allow_symbol_change: true,
+                hideideas: true,
+                container_id: "tv_chart_container",
+                //	BEWARE: no trailing slash is expected in feed URL
+                datafeed: new Datafeeds.UDFCompatibleDatafeed("https://demo_feed.tradingview.com/"),
+                library_path: "charting_library/",
+                locale: getParameterByName('lang') || "en",
+                //	Regression Trend-related functionality is not implemented yet, so it's hidden for a while
+                drawings_access: { type: 'black', tools: [ { name: "Regression Trend" } ] },
+                disabled_features: ["use_localstorage_for_settings"],
+                enabled_features: ["study_templates"],
+                charts_storage_url: 'http://saveload.tradingview.com',
+                charts_storage_api_version: "1.1",
+                client_id: 'tradingview.com',
+                user_id: 'public_user_id'
+            });
+        });
+
+    </script>
+    <style type="text/css">
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body.night {
+            background-position: 100% 100%;
+            color: #fff;
+            background-image: linear-gradient(to bottom,#1c2431 30%,#1c2431,#1c2431,#1c2431 80%);
+            transition: all 1s;
+        }
+
+        body.night .card-box {
+
+            background-color: #283142;
+            border: 1px solid #374457;
+        }
+        body.night #bit-nam {
+
+            color: #7f8fa3;
+        }
+        body.night #bit-eth {
+
+            color: #9cabbd;
+        }
+        body.night  #bit-coins {
+            color: #7f8fa3;
+        }
+        body.night #bit-vol {
+
+            color: #7f8fa3;
+        }
+        body.night  .card-box-chart{
+
+            background-color: #283142;
+            border: 1px solid #374457;
+        }
+        body.night .card-box-sm
+        {
+
+            background-color: #283142;
+            border: 1px solid #374457;
+        }
+        body.night hr {
+
+            border-top: 1px solid #374457;
+        }
+        body.night div.apply-order-form .form-area .form-row .addon {
+            width: 25%;
+            font-size: 12px;
+            height: 23px;
+            padding: 0 4px;
+            border-radius: 0 3px 3px 0;
+            border: 1px solid #354158;
+            color: rgb(129, 159, 198);
+            background-color: #2c3649;
+            border-left: none;
+            margin: 1px 0;
+        }
+        body.night .form-control {
+            background-color: #2c3649;
+        }
+        body.night #bit-nam {
+            font-size: 12px;
+            font-family: "Poppins";
+            color: #EFEAFD!important;
+        }
+        body.night #bit-rate{
+               color: #A78DEC !important;
+        }
+
+        body.night #bit-vol{
+            color: #EFEAFD!important;
+        }
+        body.night .form-control{
+            background-color: #2c3649;
+
+        }
+        body.night .signup-text {
+            color: #EFEAFD!important;
+        }
+        body.night .bg-muted{
+            background-color: #283142 !important;
+
+        }
+        body.night #creat {
+            color: #7f8fa3;
+        }
+        body.night #s-in {
+            color: #7f8fa3;
+        }
+        body.night #bit-coins
+        {
+            color: #EFEAFD!important;
+        }
+        body.night #bit-eth{
+            color: #EFEAFD!important;
+        }
+        body.night .pair-details .pair-details-blocktb .block-title {
+            color: #EFEAFD!important;
+
+        }
+        body.night  #no-stats {
+            color: #7f8fa3;
+        }
+        body.night .digits {
+            color: #7f8fa3;
+        }
+        body.night div.apply-order-form .form-row .label-block {
+            font-size: 13px;
+            color: #7f8fa3;
+            font-weight: 400;
+        }
+        body.night .chart-main-heading2{
+
+            color: #9cabbd !important;
+        }
+        body.night #bit-trade{
+            color: #7f8fa3;
+        }
+        body.night th{
+            color:#EFEAFD!important;
+        }
+        body.night .header-title-market{
+            color: #9cabbd !important;
+        }
+        body.night .m-t-whats-text{
+            color: #9cabbd !important;
+        }
+        body.night .pair-details .pair-details-blocktb .block-value
+        {
+            color: #c5ced9 !important;
+        }
+        body.night {
+            background-position: 100% 100%;
+            color: #fff;
+        }
+
+        .grid-stack {
+            /*background: #1c2431;*/
+        }
+        .grid-stack-item-content {
+            color: #2c3e50;
+            /*background-color: #1c2431;*/
+
+        }
+        .grid-stack .grid-stack {
+            /*margin: 0 -10px;*/
+            /*background: #fff;*/
+        }
+        .grid-stack .grid-stack .grid-stack-item-content {
+            /*background: lightpink;*/
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar-->
+<header id="topnav">
+    <div class="topbar-main">
+        <div class="container">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="../../index.html" class="logo"><span><img src="assets/images/logo.png"></span></a>
+            </div>
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <ul class="nav navbar-nav navbar-right pull-right">
+                   
+                    <li>
+                        <!-- Join -->
+                        <div class="feedback">
+                            <ul class="list-inline m-b-0">
+                                <li>
+                                    <a href="https://t.me/upfinex" target="_blank" class="button btnPush btnLightBlue btn  w-md m-b-5 m-t-12" type="button">Join Telegram Room</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Join -->
+                    </li>
+                    <li id="menu-separator">
+                        <!-- Notification -->
+                        <div class="notification-box">
+                            <ul class="list-inline m-b-0">
+                                <li class="border-box">
+                                    <a href="javascript:void(0);" class="right-bar-toggle">
+                                        <img id="header-icons"  src="assets/images/noti-icon.png">
+                                    </a>
+                                    <div class="noti-dot">
+                                        <span class="dot"></span>
+                                        <span class="pulse"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Notification bar -->
+                    </li>
+                    <li id="menu-separator">
+                        <!-- Notification -->
+                        <div class="notification-box">
+                            <ul class="list-inline m-b-0">
+                                
+                            </ul>
+                        </div>
+                        <!-- End Notification bar -->
+                    </li>
+                   <li id="menu-separator">
+                        <!-- Notification -->
+                        <div class="notification-box">
+                            <ul class="list-inline m-b-0">
+                                <li class="border-box">
+                                    <a href="javascript:void(0);" class="right-bar-toggle">
+                                        <img id="header-icons"  src="assets/images/pro-icon.png">
+                                    </a>
+                                   
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Notification bar -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-custom">
+        <div class="container">
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+                   
+                    <li>
+                        <!-- Join -->
+                        <div class="feedback-mob">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://t.me/upfinex" type="button" class="button btnPush btnLightBlue btn  w-md m-b-5 m-t-12">Join to Telegram</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Join -->
+                    </li>
+                </ul>
+                <!-- End navigation menu  -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Navigation Bar-->
+
+<!-- Mobile layoutView -->
+<div class="wrapper">
+    <div class="container desktop-hidden mobile-visible-normal">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div id="container">
+                    <div class="sec-sideing-mobile desktop-hidden mobile-visible-normal">
+                        <p class="chart-main-mobile-heading2">Upfinex Exchange (BETA)</p>
+                        <p class="chart-sub-mobile-heading">Trade Simple, Fast and Easily</p>
+                        <p class="chart-main-mobile-heading2"><span class="chart-heading-big-mobile"> 24hr Volume: <span class="chart-tab-text">3221.31681570 BTC / 44472.58369220 ETH </span></span></p>
+                    </div>
+                    <table class="table table-bordered desktop-hidden mobile-visible m-b-15">
+                        <tbody>
+                        <tr id="mobile-layout-tb">
+                            <td><span data-toggle="tab" class="chart-mobile-heading">Last Price </span><br><span class="chart-tab-text">0.077635621380 </span></td>
+                            <td> <span class="chart-mobile-heading" > 24h Change </span><br><span class="chart-tab-text" style="color: #49DA6E;">14.03%</span></td>
+                        </tr>
+                        <tr id="mobile-layout-tb">
+                            <td><span data-toggle="tab" class="chart-mobile-heading">24h high </span><br><span class="chart-tab-text">0.07935000 </span></td>
+                            <td> <span class="chart-mobile-heading" >24h Low </span><br><span class="chart-tab-text">0.07500000</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-12 col-md-5 width-custom">
+                <div class="width-custom2">
+                    <div class="card-box-chart">
+                        <div class="b-0 m-b-0">
+                            <div class="pair-details m-b-27">
+                                <div class="pair-details-block">
+                                    <img  src='assets/images/icon.png'/><h4 class='header-title-market'>PRICE CHART</h4>
+
+                                </div>
+                            </div>
+                            <div id="tv_chart_container_mob"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar-main">
+            <div class="card-box-sm p-b-0">
+                <div class="m-t-buy">
+                    <div class="dropdown pull-right mobile-margin">
+                        <li>
+                            <form role="search" class="navbar-left app-search pull-left">
+                                <input  type="text" type="text" id="myInputMob" onkeyup="myFunctionMob()" placeholder="Filter" title="Type in a Coin"  class="form-control form-control-main">
+                                <a class="fa-fa-search" href="#"><i class="fa fa-search"></i></a>
+                            </form>
+                        </li>
+                    </div>
+
+                    <img  src='assets/images/icon.png'/><h4 class='header-title-market'>MARKETS</h4>
+                </div>
+                <hr>
+                <div id="btnwizard" >
+                    <ul>
+                        <li><a href="#tab1" data-toggle="tab">BTC</a></li>
+                        <li><a href="#tab2" data-toggle="tab">ETH</a></li>
+                        <li><a href="#tab3" data-toggle="tab">UPX</a></li>
+                        <li><a href="#tab4" data-toggle="tab">USDT</a></li>
+                    </ul>
+                    <div class="tab-content m-bt-0 b-0 nicescroll lp-screen" style="height: 600px;">
+                        <div class="tab-pane m-t-10 fade" id="tab1">
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <table  id="myTable2" class="table">
+                                        <thead>
+                                        <tr id="down-count">
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                            <th style="font-size: 12px;;"> Name</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="id-bitcoin">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane m-t-10 fade" id="tab2">
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <table  id="myTable2" class="table">
+                                        <thead>
+                                        <tr id="down-count">
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                            <th style="font-size: 12px;;"> Name</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="id-bitcoin2">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane m-t-10 fade" id="tab3">
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <table  id="myTable2" class="table">
+                                        <thead>
+                                        <tr id="down-count">
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                            <th style="font-size: 12px;;"> Name</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="id-bitcoin3">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane m-t-10 fade" id="tab4">
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <table  id="myTable2" class="table">
+                                        <thead>
+                                        <tr id="down-count">
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                            <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                            <th style="font-size: 12px;;"> Name</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="id-bitcoin4">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-t-20"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <div class="col-lg-4 col-md-6 " id="sidebar-main">
+            <div class="card-box-sm p-b-0">
+                <div class="tabs-holder">
+                    <ul class="nav nav-tabs" id="order-tabs" role="tablist">
+                        <li class="active" role="presentation">
+                            <a aria-controls="home" data-height="true" data-toggle="tab" href="#tab-buy" role="tab" aria-expanded="true"><span><img src="assets/images/icon.png">     <span class="header-title-market">BUY ORDERS</span></span></a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a aria-controls="profile" data-height="true" data-toggle="tab" href="#tab-sell" role="tab" aria-expanded="false"><span><img src="assets/images/icon2.png">     <span class="header-title-market">SELL ORDERS</span></span></a>
+                        </li>
+                    </ul>
+                    <h4 class="m-t-whats-text">Total: <span id="no-stats">85126.05686568</span> BTC</h4>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab-buy" role="tabpanel">
+                            <div class="row">
+                                <div class=" m-bt-0 b-0 nicescroll lp-screen-2" style="height: 400px; ">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <tr id="down-count">
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">ETH  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">   BTC  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;"> SUM(BTC)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td id="bit-rate">0.08520000	</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                                <td id="bit-eth">0.06172955</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08520001</td>
+                                                <td id="bit-eth">1.11750567</td>
+                                                <td id="bit-eth">0.15694104</td>
+                                                <td id="bit-eth">1.11750567	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08520426	</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                                <td id="bit-eth">0.16103064</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08520508	</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                                <td id="bit-eth">0.17429632</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08521166</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                                <td id="bit-eth">0.64125622</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08522919	</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                                <td id="bit-eth">0.89719989</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08523170	</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                                <td id="bit-eth">1.33139780</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08523250</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                                <td id="bit-eth">1.43112682</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08523721	</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                                <td id="bit-eth">1.89063240</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08523782	</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                                <td id="bit-eth">2.29387209</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08525150	</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                                <td id="bit-eth">2.46441497</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-rate">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-rate">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-sell" role="tabpanel">
+                            <div class="row">
+                                <div class="m-bt-0 b-0 nicescroll lp-screen-2" style="height: 400px;">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <tr id="down-count">
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">ETH  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">   BTC  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;"> SUM(BTC)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td id="bit-sell">0.08520000	</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                                <td id="bit-eth">0.06172955</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08520001</td>
+                                                <td id="bit-eth">1.11750567</td>
+                                                <td id="bit-eth">0.15694104</td>
+                                                <td id="bit-eth">1.11750567	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08520426	</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                                <td id="bit-eth">0.16103064</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08520508	</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                                <td id="bit-eth">0.17429632</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08521166</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                                <td id="bit-eth">0.64125622</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08522919	</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                                <td id="bit-eth">0.89719989</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08523170	</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                                <td id="bit-eth">1.33139780</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08523250</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                                <td id="bit-eth">1.43112682</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08523721	</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                                <td id="bit-eth">1.89063240</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08523782	</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                                <td id="bit-eth">2.29387209</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08525150	</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                                <td id="bit-eth">2.46441497</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <div class="col-lg-4 col-md-6 " id="sidebar-main">
+            <div class="card-box-sm p-b-0">
+                <div class="tabs-holder-cals">
+                    <ul class="nav nav-tabs" id="order-tabs" role="tablist">
+                        <li class="active" role="presentation">
+                            <a aria-controls="home" data-height="true" data-toggle="tab" href="#tab-buy-eth" role="tab" aria-expanded="true">     <span><img src="assets/images/icon.png">     <span class="header-title-market">BUY ETH</span></span></a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a aria-controls="profile" data-height="true" data-toggle="tab" href="#stop-limit" role="tab" aria-expanded="false"> <span><img src="assets/images/icon.png">     <span class="header-title-market">STOP-LIMIT</span></span></a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a aria-controls="buy" data-height="true" data-toggle="tab" href="#eth" role="tab" aria-expanded="false">  <span><img src="assets/images/icon.png">     <span class="header-title-market">SELL ETH</span></span></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab-buy-eth" role="tabpanel">
+                            <div class="row">
+                                <div class="apply-order-form buy-form">
+                                    <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputPrice">Price</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-pristine ng-valid ng-touched" placeholder="0.07696794" formcontrolname="price" name="inputPrice" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputAmount">Amount</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                ETH
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputTotal">Total</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="m-q-buy-form">
+                                            <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="stop-limit" role="tabpanel">
+                            <div class="row">
+                                <div class="apply-order-form buy-form">
+                                    <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputPrice">Price</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-pristine ng-valid ng-touched" placeholder="0.07696794" formcontrolname="price" name="inputPrice" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputAmount">Amount</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                ETH
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputTotal">Total</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="m-q-buy-form">
+                                            <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="eth" role="tabpanel">
+                            <div class="row">
+                                <div class="apply-order-form buy-form">
+                                    <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputPrice">Price</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-pristine ng-valid ng-touched" placeholder="0.07696794" formcontrolname="price" name="inputPrice" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputAmount">Amount</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                ETH
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="label-block">
+                                                <label for="inputTotal">Total</label>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                            </div>
+                                            <div class="addon">
+                                                BTC
+                                            </div>
+                                        </div>
+                                        <div class="m-q-buy-form">
+                                            <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <div class="col-lg-4 col-md-6 " id="sidebar-main">
+            <div class="card-box-sm ">
+                <div class="m-t-buy">
+                    <img  src='assets/images/icon.png'/><h4 class='header-title-market'>TRADE HISTORY</h4>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="nicescroll" style="height: 400px;">
+                            <div class="table-responsive ">
+                                <table class="table">
+                                    <thead>
+                                    <tr id="down-count">
+                                        <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">     DATE   </th>
+                                        <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">TYPE  </th>
+                                        <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">  PRICE (BTC)  </th>
+                                        <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;"> AMOUNT (ETH)</th>
+                                        <th style="font-size: 12px;color: #7f8fa3;"> TOTAL (BTC)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg">Buy</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg">Buy</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg">Buy</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="bit-trade">23-08-2017</td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    <tr class="sec-tbl">
+                                        <td id="bit-trade">23-08-2017 </td>
+                                        <td id="bit-chg-red">Sell</td>
+                                        <td id="bit-trade">0.7573001</td>
+                                        <td id="bit-trade">0.0154758747</td>
+                                        <td id="bit-trade">0.11627730</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/row-->
+</div>
+<!--/.container-->
+<!-- End Mobile LayoutView-->
+
+<!--Desktop LayoutView-->
+<div class="wrapper mobile-hidden ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="container">
+                    <div class="sec-sideing-mobile desktop-hidden mobile-visible-normal">
+                        <p class="chart-main-mobile-heading2">Upfinex Exchange</p>
+                        <p class="chart-sub-mobile-heading">Trade Simple, Fast and Easily</p>
+                        <p class="chart-main-mobile-heading2"><span class="chart-heading-big-mobile"> 24hr Volume: <span class="chart-tab-text">11121.31681570 BTC / 144472.58369220 ETH </span></span></p>
+                    </div>
+                    <table class="table table-bordered desktop-hidden mobile-visible m-b-15">
+                        <tbody>
+                        <tr id="mobile-layout-tb">
+                            <td><span data-toggle="tab" class="chart-mobile-heading">Last Price </span><br><span class="chart-tab-text">0.077635621380 </span></td>
+                            <td> <span class="chart-mobile-heading" > 24h Change </span><br><span class="chart-tab-text" style="color: #49DA6E;">14.03%</span></td>
+                        </tr>
+                        <tr id="mobile-layout-tb">
+                            <td><span data-toggle="tab" class="chart-mobile-heading">24h high </span><br><span class="chart-tab-text">0.07935000 </span></td>
+                            <td> <span class="chart-mobile-heading" >24h Low </span><br><span class="chart-tab-text">0.07500000</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-group pull-right m-t-151 mobile-hidden"  id="wizard" class="pull-in">
+
+                    <div class="pair-details">
+                        <div class="pair-details-blocktb">
+                            <span class="block-title">24hr Volume: </span>
+                            <span class="digits"><strong class="digits">0.00000000</strong> BTH / <strong class="digits">0.00000000</strong> ETH</span>
+                        </div>
+                        <div class="pair-details-blocktb pair-border">
+                            <span class="block-title">Last price: </span><br>
+                            <span class="block-value digits">0.08226000</span>
+                        </div>
+                        <div class="pair-details-blocktb pair-border">
+                            <span class="block-title">24hr Change: </span><br>
+                            <span class="block-value digits"><span style="color: #49DA6E;">14.03%</span></span>
+                        </div>
+                        <div class="pair-details-blocktb pair-border">
+                            <span class="block-title">24hr High: </span><br>
+                            <span class="block-value digits">0.08704373</span>
+                        </div>
+                        <div class="pair-details-blocktb pair-border">
+                            <span class="block-title">24hr Low: </span><br>
+                            <span class="block-value digits">0.07105000</span>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="sec-sideing mobile-hidden">
+                    <h4 class="chart-main-heading2">Upfinex Exchange (Beta)<br><span class="chart-sub-heading">Trade Simple, Fast and Easily</span></h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid-stack">
+            <!--Desktop Layout display.-->
+            <div class="grid-stack-item mobile-hidden" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="16">
+                <div class="grid-stack-item-content">
+                    <div class="sidebar-offcanvas" id="sidebar-main">
+                        <div class="card-box p-b-0">
+                            <div class="dropdown pull-right">
+                                <li>
+                                    <div class="navbar-left app-search pull-left hidden-xs">
+                                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter" title="Type in a Coin"  class="form-control form-control-main">
+                                        <a class="fa-fa-search" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <img  src='assets/images/icon.png'/><h4 class='header-title-market'>MARKETS</h4>
+
+                           <div id="basicwizard" class="pull-in"style="padding-top: 25px;">
+                              <ul>
+                                 <li><a href="#tab12" data-toggle="tab">BTC</a></li>
+                                 <li><a href="#tab22" data-toggle="tab">ETH</a></li>
+                                 <li><a href="#tab32" data-toggle="tab">UPX</a></li>
+                                 <li><a href="#tab42" data-toggle="tab">USDT</a></li>
+                              </ul>
+                              <div class="tab-content m-b-0 b-0 nicescroll lp-screen" style="height: 1250px;">
+                                 <div class="tab-pane m-t-10 fade" id="tab12">
+                                    <div class="row">
+                                       <div class="table-responsive">
+                                          <table id="myTable" class="table">
+                                             <thead>
+                                                <tr id="down-count">
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                                   <th style="font-size: 12px;;"> Name</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="id-bitcoin5">
+                                             </tbody>
+                                          </table>
+
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane m-t-10 fade" id="tab22">
+                                    <div class="row">
+                                       <div class="table-responsive">
+                                           <table id="myTable" class="table">
+                                             <thead>
+                                                <tr id="down-count">
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                                   <th style="font-size: 12px;;"> Name</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="id-bitcoin6">
+                                             </tbody>
+                                          </table>
+
+                                       </div>
+
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane m-t-10 fade" id="tab32">
+                                    <div class="row">
+                                       <div class="table-responsive">
+                                           <table id="myTable" class="table">
+                                             <thead>
+                                                <tr id="down-count">
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                                   <th style="font-size: 12px;;"> Name</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="id-bitcoin7">
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane m-t-10 fade" id="tab42">
+                                    <div class="row">
+                                       <div class="table-responsive">
+                                           <table id="myTable" class="table">
+                                             <thead>
+                                                <tr id="down-count">
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Coin</th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">Volume  </th>
+                                                   <th style="font-size: 12px;    border-right: 1px solid #3b495d;">   Change  </th>
+                                                   <th style="font-size: 12px;;"> Name</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="id-bitcoin8">
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="m-t-20"></div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <!--Desktop Layout display.-->
+            <div class="grid-stack-item " data-gs-x="3" data-gs-y="0" data-gs-width="6" data-gs-height="6">
+                <div class="grid-stack-item-content">
+                    <div id="sidebar-main">
+                        <div class="width-custom2">
+                            <div class="card-box-chart">
+                                <div class="b-0 m-b-0">
+                                    <div class="pair-details m-b-27">
+                                        <div class="pair-details-block">
+                                            <img  src='assets/images/icon.png'/><h4 class='header-title-market'>PRICE CHART</h4>
+
+                                        </div>
+                                    </div>
+                                    <div id="tv_chart_container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-stack-item" data-gs-x="3" data-gs-y="7" data-gs-width="2" data-gs-height="4">
+                <div class="grid-stack-item-content">
+                    <div id="sidebar-main">
+                        <div class="card-box-sm">
+                            <div class="whats-this pull-right">
+                                <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <h4 class="m-t-whats-text"><img src="assets/images/trig.png"></h4>
+                                </a>
+                            </div>
+                            <div class="m-t-buy">
+                                <img  src='assets/images/icon.png'/><h4 class='header-title-market'>BUY ETH</h4>
+
+                            </div>
+                            <hr>
+                            <div class="apply-order-form buy-form">
+                                <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputPrice">Price</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-pristine ng-valid ng-touched" formcontrolname="price" name="inputPrice" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputAmount">Amount</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            ETH
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputTotal">Total</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="m-q-buy-form">
+                                        <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <div class="grid-stack-item" data-gs-x="5" data-gs-y="7" data-gs-width="2" data-gs-height="4">
+                <div class="grid-stack-item-content">
+                    <div id="sidebar-main">
+                        <div class="card-box-sm">
+                            <div class="whats-this pull-right">
+                                <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <h4 class="m-t-whats-text"><img src="assets/images/trig.png"></h4>
+                                </a>
+                            </div>
+                            <div class="m-t-buy">
+                                <img  src='assets/images/icon.png'/><h4 class='header-title-market'>STOP-LIMIT</h4>
+
+                            </div>
+                            <hr>
+                            <div class="apply-order-form buy-form">
+                                <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputPrice">Price</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-pristine ng-valid ng-touched" formcontrolname="price" name="inputPrice" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputAmount">Amount</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            ETH
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputTotal">Total</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="m-q-buy-form">
+                                        <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <div class="grid-stack-item" data-gs-x="7" data-gs-y="7" data-gs-width="2" data-gs-height="4">
+                <div class="grid-stack-item-content">
+                    <div id="sidebar-main">
+                        <div class="card-box-sm">
+                            <div class="whats-this pull-right">
+                                <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <h4 class="m-t-whats-text"><img src="assets/images/trig.png"></h4>
+                                </a>
+                            </div>
+                            <div class="m-t-buy">
+                                <img  src='assets/images/icon.png'/><h4 class='header-title-market'>SELL ETH</h4>
+                            </div>
+                            <hr>
+                            <div class="apply-order-form buy-form">
+                                <form class="form-area ng-pristine ng-invalid ng-touched" novalidate>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputPrice">Price</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-pristine ng-valid ng-touched" formcontrolname="price" name="inputPrice" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputAmount">Amount</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="amount" name="inputAmount" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            ETH
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="label-block">
+                                            <label for="inputTotal">Total</label>
+                                        </div>
+                                        <div class="input">
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="total" name="inputTotal" type="text">
+                                        </div>
+                                        <div class="addon">
+                                            BTC
+                                        </div>
+                                    </div>
+                                    <div class="m-q-buy-form">
+                                        <p class="signup-text"> <span id="s-in">Sign In</span> or <span id="creat">Create</span> an Account to trade.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <div class="grid-stack-item" data-gs-x="3" data-gs-y="12" data-gs-width="6" data-gs-height="6">
+                <div class="grid-stack-item-content">
+                    <div id="sidebar-main">
+                        <div class="card-box-sm ">
+                            <div class="whats-this pull-right">
+                                <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <h4 class="m-t-whats-text">Total: 85126.05686568 ETH</h4>
+                                </a>
+                            </div>
+                            <div class="m-t-buy">
+                                <img  src='assets/images/icon.png'/><h4 class='header-title-market'>TRADE HISTORY</h4>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="m-t-buy-form m-b-0 b-0 nicescroll" style="height: 400px;">
+                                        <div class="table-responsive ">
+                                            <table class="table">
+                                                <thead>
+                                                <tr id="down-count">
+                                                    <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">     DATE   </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">TYPE  </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;">  PRICE (BTC)  </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;border-right: 1px solid #3b495d;"> AMOUNT (ETH)</th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;"> TOTAL (BTC)</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22	</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg">Buy</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg">Buy</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg">Buy</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-trade">23-08-2017    16:05:22</td>
+                                                    <td id="bit-chg-red">Sell</td>
+                                                    <td id="bit-trade">0.7573001</td>
+                                                    <td id="bit-trade">0.0154758747</td>
+                                                    <td id="bit-trade">0.11627730</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <!--</div>
+               <!--/row-->
+            <!--</div>
+               <!--/span-->
+            <div class="grid-stack-item" data-gs-x="9" data-gs-y="0" data-gs-width="3" data-gs-height="8">
+                <div class="grid-stack-item-content">
+                    <div class="sidebar-offcanvas" id="sidebar">
+                        <div class="card-box-sm">
+                            <div class="whats-this pull-right">
+                                <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <h4 class="m-t-whats-text">Total: <span id="no-stats">85126.05686568</span> BTC <img src="assets/images/trig.png"></h4>
+                                </a>
+                            </div>
+                            <div class="m-tw-buy">
+                                <img  src='assets/images/icon.png'/><h4 class='header-title-market'>BUY ORDERS</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="m-t-buy-form m-b-0 b-0 nicescroll lp-screen-2" style="height: 625px;overflow:visible;">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                <tr id="down-count">
+                                                    <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">ETH  </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">   BTC  </th>
+                                                    <th style="font-size: 12px;color: #7f8fa3;"> SUM(BTC)</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td id="bit-rate">0.08520000	</td>
+                                                    <td id="bit-eth">0.72452520</td>
+                                                    <td id="bit-eth">0.06172955</td>
+                                                    <td id="bit-eth">0.72452520</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08520001</td>
+                                                    <td id="bit-eth">1.11750567</td>
+                                                    <td id="bit-eth">0.15694104</td>
+                                                    <td id="bit-eth">1.11750567	</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08520426	</td>
+                                                    <td id="bit-eth">0.04799758	</td>
+                                                    <td id="bit-eth">0.16103064</td>
+                                                    <td id="bit-eth">0.04799758	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08520508	</td>
+                                                    <td id="bit-eth">0.15569118	</td>
+                                                    <td id="bit-eth">0.17429632</td>
+                                                    <td id="bit-eth">0.15569118	</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08521166</td>
+                                                    <td id="bit-eth">5.48000000</td>
+                                                    <td id="bit-eth">0.64125622</td>
+                                                    <td id="bit-eth">5.48000000</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08522919	</td>
+                                                    <td id="bit-eth">0.32000299</td>
+                                                    <td id="bit-eth">0.89719989</td>
+                                                    <td id="bit-eth">0.32000299</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08523170	</td>
+                                                    <td id="bit-eth">2.68292278</td>
+                                                    <td id="bit-eth">1.33139780</td>
+                                                    <td id="bit-eth">2.68292278</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08523250</td>
+                                                    <td id="bit-eth">0.09400000</td>
+                                                    <td id="bit-eth">1.43112682</td>
+                                                    <td id="bit-eth">0.09400000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08523721	</td>
+                                                    <td id="bit-eth">5.00000000</td>
+                                                    <td id="bit-eth">1.89063240</td>
+                                                    <td id="bit-eth">5.00000000</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08523782	</td>
+                                                    <td id="bit-eth">1.17000900	</td>
+                                                    <td id="bit-eth">2.29387209</td>
+                                                    <td id="bit-eth">1.17000900	</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08525150	</td>
+                                                    <td id="bit-eth">5.39000000	</td>
+                                                    <td id="bit-eth">2.46441497</td>
+                                                    <td id="bit-eth">5.39000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                <tr class="sec-tbl">
+                                                    <td id="bit-rate">0.08525152	</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                    <td id="bit-eth">2.91979410</td>
+                                                    <td id="bit-eth">4.73000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="bit-rate">0.08527144	</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                    <td id="bit-eth">2.91999410</td>
+                                                    <td id="bit-eth">5.34000000	</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/span-->
+            <div class="grid-stack-item" data-gs-x="9" data-gs-y="8" data-gs-width="3" data-gs-height="8">
+                <div class="grid-stack-item-content">
+                    <div class="card-box-sm">
+                        <div class="whats-this pull-right">
+                            <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                <h4 class="m-t-whats-text">Total: <span id="no-stats">85126.05686568</span> ETH <img src="assets/images/trig.png"></h4>
+                            </a>
+                        </div>
+                        <div class="m-tw-buy">
+                            <img  src='assets/images/icon2.png'/><h4 class='header-title-market'>SELL ORDERS</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="m-t-buy-form m-b-0 b-0 nicescroll lp-screen-2" style="height: 625px;">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <tr id="down-count">
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">     Price    </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">ETH  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;">   BTC  </th>
+                                                <th style="font-size: 12px;color: #7f8fa3;    border-right: 1px solid #3b495d;"> SUM(BTC)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td id="bit-sell">0.08520000	</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                                <td id="bit-eth">0.06172955</td>
+                                                <td id="bit-eth">0.72452520</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08520001</td>
+                                                <td id="bit-eth">1.11750567</td>
+                                                <td id="bit-eth">0.15694104</td>
+                                                <td id="bit-eth">1.11750567	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08520426	</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                                <td id="bit-eth">0.16103064</td>
+                                                <td id="bit-eth">0.04799758	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08520508	</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                                <td id="bit-eth">0.17429632</td>
+                                                <td id="bit-eth">0.15569118	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08521166</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                                <td id="bit-eth">0.64125622</td>
+                                                <td id="bit-eth">5.48000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08522919	</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                                <td id="bit-eth">0.89719989</td>
+                                                <td id="bit-eth">0.32000299</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08523170	</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                                <td id="bit-eth">1.33139780</td>
+                                                <td id="bit-eth">2.68292278</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08523250</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                                <td id="bit-eth">1.43112682</td>
+                                                <td id="bit-eth">0.09400000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08523721	</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                                <td id="bit-eth">1.89063240</td>
+                                                <td id="bit-eth">5.00000000</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08523782	</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                                <td id="bit-eth">2.29387209</td>
+                                                <td id="bit-eth">1.17000900	</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08525150	</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                                <td id="bit-eth">2.46441497</td>
+                                                <td id="bit-eth">5.39000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            <tr class="sec-tbl">
+                                                <td id="bit-sell">0.08525152	</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                                <td id="bit-eth">2.91979410</td>
+                                                <td id="bit-eth">4.73000000</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="bit-sell">0.08527144	</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                                <td id="bit-eth">2.91999410</td>
+                                                <td id="bit-eth">5.34000000	</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-t-20"></div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- End Desktop LayoutView-->
+</div>
+<!--/row-->
+</div>
+<!--/.container-->
+<!-- end container -->
+<!-- Right Sidebar -->
+<div class="side-bar right-bar">
+    <a href="javascript:void(0);" class="right-bar-toggle">
+        <i class="zmdi zmdi-close-circle-o"></i>
+    </a>
+    <h4 class="">Notifications</h4>
+    <div class="notification-list nicescroll">
+        <ul class="list-group list-no-border user-list">
+            <li class="list-group-item">
+                <a href="#" class="user-list-item">
+                    <div class="avatar">
+                        <img src="assets/images/avatar-1.html" alt="">
+                    </div>
+                    <div class="user-desc">
+                        <span class="name">Andrew Gazdecki</span>
+                        <span class="desc">There are new settings available</span>
+                        <span class="time">2 hours ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#" class="user-list-item">
+                    <div class="icon bg-info">
+                        <i class="zmdi zmdi-account"></i>
+                    </div>
+                    <div class="user-desc">
+                        <span class="name">New Signup</span>
+                        <span class="desc">There are new settings available</span>
+                        <span class="time">5 hours ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="#" class="user-list-item">
+                    <div class="icon bg-pink">
+                        <i class="zmdi zmdi-comment"></i>
+                    </div>
+                    <div class="user-desc">
+                        <span class="name">New Message received</span>
+                        <span class="desc">There are new settings available</span>
+                        <span class="time">1 day ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item active">
+                <a href="#" class="user-list-item">
+                    <div class="avatar">
+                        <img src="assets/images/avatar-1.html" alt="">
+                    </div>
+                    <div class="user-desc">
+                        <span class="name">Andrew Gazdecki</span>
+                        <span class="desc">There are new settings available</span>
+                        <span class="time">2 days ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item active">
+                <a href="#" class="user-list-item">
+                    <div class="icon bg-warning">
+                        <i class="zmdi zmdi-settings"></i>
+                    </div>
+                    <div class="user-desc">
+                        <span class="name">Settings</span>
+                        <span class="desc">There are new settings available</span>
+                        <span class="time">1 day ago</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /Right-bar -->
+</div>
+</div>
+<!-- jQuery  -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/detect.js"></script>
+<script src="assets/js/fastclick.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.blockUI.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<!-- Form wizard -->
+<script src="assets/plugins/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+<script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>
+<script type="text/javascript" src="../static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
+<script>
+    window.addEventListener("keydown",function (e) {
+        if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+            e.preventDefault();
+            $('#myInput').focus();
+        }
+    })
+</script>
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td,  i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+
+    }
+</script>
+<script>
+    window.addEventListener("keydown",function (e) {
+        if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+            e.preventDefault();
+            $('#myInputMob').focus();
+        }
+    })
+</script>
+<script>
+    function myFunctionMob() {
+        var input, filter, table, tr, td,  i;
+        input = document.getElementById("myInputMob");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function (a) {
+        $('body').addClass('night');
+
+
+
+
+
+    });
+
+
+    $('#toggle-box-checkbox').on('change', function(){
+        if(this.checked){
+            $('body').addClass('night');
+        }else{
+            $('body').removeClass('night');
+
+        }
+    });
+
+
+// run demo if in searchresult preview
+function demo(){
+setInterval(function(){
+$("#toggle-box-checkbox").trigger('click');
+}, 1000);
+}
+if (document.location.pathname.indexOf('fullcpgrid')>-1){
+demo();
+}
+</script>
+
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin2').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#tab2').append("<div class='ic-row'>" +
+                    "<div id='bit-nam' class='ic-cell token'>"+val['symbol']+"</div>" +
+                    "<div id='bit-rate' class='ic-cell price digits'>"+val['price_usd']+"</div>" +
+                    "<div id='bit-vol' class='ic-cell volume digits'>"+val['24h_volume_usd']+"</div>" +
+                    "<div id='bit-chg' class='ic-cell change digits'>"+val['percent_change_24h']+"</div>" +
+                    "<div id='bit-coins' class='ic-cell name visible-lg visible-sm'>"+val['name']+"</divc>" +
+                    " </div>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('div').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin3').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin4').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin5').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin6').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin7').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function updatePrice() {
+        $.getJSON("https://api.coinmarketcap.com/v1/ticker/", function(data) {
+            $.each( data, function( key, val ) {
+                $('#id-bitcoin8').append("<tr>" +
+                    "<td id='bit-nam'>"+val['symbol']+"</td>" +
+                    "<td id='bit-rate'>"+val['price_usd']+"</td>" +
+                    "<td id='bit-vol'>"+val['24h_volume_usd']+"</td>" +
+                    "<td id='bit-chg'>"+val['percent_change_24h']+"</td>" +
+                    "<td id='bit-coins'>"+val['name']+"</td>" +
+                    " </tr>");
+
+            });
+            changeClass();
+        })
+    }
+    $(document).ready(setInterval(updatePrice(), 300000))
+
+
+    function changeClass() {
+        $('td').each(function() {
+            var val = $(this).text(), n = +val;
+            if (!isNaN(n) && /^\s*[+-]/.test(val)) {
+                $(this).addClass(val >= 0 ? 'pos' : 'neg')
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        var options = {
+        };
+        $('.grid-stack').gridstack(options);
+    });
+
+
+</script>
+<script type="text/javascript">
+    var chart = new cryptowatch.Embed('bitfinex', 'btcusd', {
+
+        timePeriod: '1d',
+        customColorScheme: {
+            bg:           "283142",
+            text:         "b2b2b2",
+            textStrong:   "e5e5e5",
+            textWeak:     "7f7f7f",
+            short:        "FD4600",
+            shortFill:    "ef4836",
+            long:         "1bbc9b",
+            longFill:     "ef4836",
+            cta:          "363D52",
+            ctaHighlight: "414A67",
+            alert:        "FFD506",
+        }
+    });
+    chart.mount('#chart-container');
+</script>
+<script type="text/javascript">
+    var chart = new cryptowatch.Embed('bitfinex', 'btcusd', {
+        timePeriod: '1d',
+
+        customColorScheme: {
+            bg:           "283142",
+            text:         "b2b2b2",
+            textStrong:   "e5e5e5",
+            textWeak:     "7f7f7f",
+            short:        "FD4600",
+            shortFill:    "ef4836",
+            long:         "1bbc9b",
+            longFill:     "ef4836",
+            cta:          "363D52",
+            ctaHighlight: "414A67",
+            alert:        "FFD506",
+        }
+    });
+    chart.mount('#chart-container-mob');
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#basicwizard').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted'});
+
+        $('#wizard').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-main nav-justified bg-muted-grey'});
+        $('#wizard2').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-main nav-justified bg-muted-grey'});
+
+        $('#progressbarwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index+1;
+            var $percent = ($current/$total) * 100;
+            $('#progressbarwizard').find('.bar').css({width:$percent+'%'});
+        },
+            'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted'});
+
+        $('#btnwizard').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-justified nav-justified-wiz bg-muted','nextSelector': '.button-next', 'previousSelector': '.button-previous', 'firstSelector': '.button-first', 'lastSelector': '.button-last'});
+
+        $('#btnwizard-mob').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-justified nav-justified-wiz bg-muted','nextSelector': '.button-next', 'previousSelector': '.button-previous', 'firstSelector': '.button-first', 'lastSelector': '.button-last'});
+
+        var $validator = $("#commentForm").validate({
+            rules: {
+                emailfield: {
+                    required: true,
+                    email: true,
+                    minlength: 3
+                },
+                namefield: {
+                    required: true,
+                    minlength: 3
+                },
+                urlfield: {
+                    required: true,
+                    minlength: 3,
+                    url: true
+                }
+            }
+        });
+
+        $('#rootwizard').bootstrapWizard({
+            'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted',
+            'onNext': function (tab, navigation, index) {
+                var $valid = $("#commentForm").valid();
+                if (!$valid) {
+                    $validator.focusInvalid();
+                    return false;
+                }
+            }
+        });
+    });
+
+</script>
+<script src="../fast.appcues.com/28668.js"></script>
+<!-- ...Normal application HTML... -->
+<script type="text/javascript">
+    Appcues.anonymous();
+</script>
+</body>
+
+</html>
